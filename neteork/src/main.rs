@@ -11,7 +11,7 @@
 mod interface_sample;
 mod sample;
 
-use crate::sample::Sample;
+use crate::{interface_sample::InterfaceSample, sample::Sample};
 
 fn main() {
     println!("Hi!");
@@ -20,4 +20,5 @@ fn main() {
         size: 1,
         pointer: p,
     });
+    ptr.intMethod(1);
 }
